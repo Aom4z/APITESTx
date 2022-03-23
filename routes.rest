@@ -1,0 +1,24 @@
+GET http://localhost:3000/subscribers
+
+###
+GET http://localhost:3000/subscribers/623aa671fe71457150450b6a
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name" : "Jane Doe",
+    "subscribedToChannel" : "Eat and Travel"
+}
+
+###
+Delete http://localhost:3000/subscribers/
+
+###
+PATCH http://localhost:3000/subscribers/623aa583fe71457150450b68
+Content-Type: application/json
+
+{
+    "subscribedToChannel" : "Camping"
+}
